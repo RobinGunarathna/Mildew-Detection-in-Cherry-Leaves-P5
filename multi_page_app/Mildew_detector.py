@@ -10,7 +10,7 @@ from src.machine_learning.predictive_analysis import (
                                                     plot_predictions_probabilities
                                                     )
 
-def page_malaria_detector_body():
+def page_mildew_detector_body():
     st.info(
         f"* The client is interested to tell whether a given leave contains mildew "
         f"or not."
@@ -27,7 +27,6 @@ def page_malaria_detector_body():
     for uploaded_file in images_buffer:
      bytes_data = uploaded_file.read()
      st.write("filename:", uploaded_file.name)
-     st.write(bytes_data)
    
     if images_buffer is not None:
         df_report = pd.DataFrame([])
