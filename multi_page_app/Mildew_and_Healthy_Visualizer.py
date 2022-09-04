@@ -11,10 +11,10 @@ import itertools
 import random
 
 def page_cells_visualizer_body():
-    st.write("### Cherry leave Visualizer")
+    st.write("### Cherry leaf Visualizer")
     st.info(
         f"* The client is interested to have a study to visually differentiate "
-        f"a mildew infected cherry leave and uninfected cherry leave.")
+        f"a powdery mildew infected cherry leaf and healthy cherry leaf.")
     
     version = 'v1'
     if st.checkbox("Difference between average and variability image"):
@@ -24,14 +24,14 @@ def page_cells_visualizer_body():
 
       st.warning(
         f"* We notice the average and variability images didn't show "
-        f"patterns where we could intuitively differentiate one to another." 
+        f"patterns where we could intuitively differentiate one to another. " 
         f"However, a small difference in color pigment of the average images is seen for both labels")
 
-      st.image(avg_parasitized, caption='Parasitized Cell - Avegare and Variability')
-      st.image(avg_uninfected, caption='Uninfected Cell - Average and Variability')
+      st.image(avg_parasitized, caption='Powdery mildew infected leaves - Average and Variability')
+      st.image(avg_uninfected, caption='healthy leaves - Average and Variability')
       st.write("---")
 
-    if st.checkbox("Differences between average parasitized and average uninfected cells"):
+    if st.checkbox("Differences between average powdery mildew infected and average healthy leaves"):
           diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
 
           st.warning(

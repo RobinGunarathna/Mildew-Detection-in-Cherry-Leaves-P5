@@ -12,7 +12,7 @@ from src.machine_learning.predictive_analysis import (
 
 def page_mildew_detector_body():
     st.info(
-        f"* The client is interested to tell whether a given leave contains mildew "
+        f"* The client is interested to tell whether a given leaf contains mildew "
         f"or not."
         )
 
@@ -33,7 +33,7 @@ def page_mildew_detector_body():
         for image in images_buffer:
 
             img_pil = (Image.open(image))
-            st.info(f"Blood Smear Sample: **{image.name}**")
+            st.info(f"Cherry leaf Sample: **{image.name}**")
             img_array = np.array(img_pil)
             st.image(img_pil, caption=f"Image Size: {img_array.shape[1]}px width x {img_array.shape[0]}px height")
 
