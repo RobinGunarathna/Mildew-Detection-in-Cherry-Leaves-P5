@@ -22,7 +22,31 @@ To save time in this process, the IT team suggested an ML system that is capable
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision to validate it (them).
+* Hypothesis:
+
+Machine Learning can accurately differentiate between healthy and powdery mildew-affected cherry leaves: We hypothesize that a well-trained machine learning model can effectively distinguish between the two categories of cherry leaves based on image analysis.
+Validation:
+
+Data Collection and Annotation: Gather a diverse dataset of cherry leaf images, including both healthy and powdery mildew-affected leaves from different farms and conditions.
+
+Model Development: Build and train a deep learning model, such as a Convolutional Neural Network (CNN), using the annotated dataset. Ensure proper data preprocessing, augmentation, and optimization techniques.
+
+Validation and Testing: Split the dataset into training and testing subsets. Validate the model's performance on the testing subset using metrics such as accuracy, precision, recall, and F1-score.
+
+Cross-Validation: Apply cross-validation techniques, such as k-fold cross-validation, to ensure the model's generalizability across different datasets and scenarios.
+
+Real-time Testing: Deploy the model in a real-time or batch processing mode in the field. Continuously monitor and validate its performance against manual inspections.
+
+User Feedback: Gather feedback from field employees who previously conducted manual inspections to assess the model's practical performance and accuracy.
+
+Iterative Refinement: If the initial model doesn't meet performance benchmarks, refine the model, gather more data, or apply transfer learning to improve its accuracy.
+
+The validation process aims to ensure that the machine learning model can reliably differentiate between healthy and powdery mildew-affected cherry leaves, leading to the successful implementation of the automated detection system.
+
+
+
+
+
 
 
 ## Rationale to map the business requirements to the Data Visualizations and ML tasks
@@ -30,8 +54,69 @@ To save time in this process, the IT team suggested an ML system that is capable
 
 
 ## ML Business Case
-* In the previous bullet, you potentially visualized a ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+* 1. Executive Summary:
 
+Farmy & Foods is facing a significant challenge in their cherry plantation operations due to the presence of powdery mildew in cherry leaves. Their current manual inspection process is time-consuming, inefficient, and not scalable given the scale of their operations. To address this issue, we propose the development of a machine learning (ML) system for instant detection and classification of cherry leaves as healthy or containing powdery mildew. Successful implementation of this system can not only enhance the efficiency of cherry inspection but also provide a template for similar projects across various crops.
+
+2. Problem Statement:
+
+Farmy & Foods spends a substantial amount of time and resources on manual verification of cherry tree health, particularly detecting powdery mildew on leaves. This process is not scalable and consumes valuable labor resources. The primary objectives are:
+
+To visually differentiate between a healthy cherry leaf and a leaf with powdery mildew.
+To predict, using a machine learning model, whether a cherry leaf is healthy or contains powdery mildew.
+3. Proposed Solution:
+
+Implement a machine learning system for automated detection and classification of cherry leaves into two categories: healthy and powdery mildew-affected. The key components of the solution include:
+
+Data Collection: Gather a comprehensive dataset of cherry leaf images, including healthy and powdery mildew-affected leaves from various farms.
+
+Data Annotation: Annotate the dataset to label each image as either "healthy" or "powdery mildew-affected."
+
+Model Development: Build a deep learning model, such as a Convolutional Neural Network (CNN), to learn the visual patterns that distinguish healthy and affected leaves.
+
+Training and Validation: Train the model on a portion of the dataset and validate its performance using another portion to ensure robustness and accuracy.
+
+Deployment: Deploy the trained model to analyze cherry leaf images in real-time or batch processing, enabling instant identification of leaf health.
+
+Integration: Integrate the ML system into the company's existing infrastructure and processes for seamless adoption.
+
+4. Benefits and Impact:
+
+Time Efficiency: The ML system will drastically reduce the time required for leaf inspection. An automated process can process images almost instantly, saving significant labor hours.
+
+Cost Reduction: By automating the detection process, Farmy & Foods can reduce labor costs associated with manual inspections.
+
+Scalability: The system can easily scale to handle thousands of cherry trees, making it suitable for Farmy & Foods' extensive plantation operations.
+
+Accuracy: ML models can achieve high accuracy in classifying leaf health, reducing the chances of misidentifying affected leaves.
+
+Potential for Expansion: If successful, this project can be replicated for other crops, such as pest detection, further improving crop management across multiple farms.
+
+5. Risks and Challenges:
+
+Data Quality: The success of the model depends on the quality and diversity of the cherry leaf image dataset. Incomplete or biased data can lead to model inaccuracies.
+
+Model Training: Proper model training and validation are crucial. Overfitting or underfitting can affect the model's performance.
+
+Integration: The successful integration of the ML system into existing operations and infrastructure is vital. Proper testing and adjustments may be required.
+
+6. Project Timeline:
+
+The project can be divided into several phases:
+
+Data Collection and Annotation: 2 months
+Model Development and Training: 3 months
+Validation and Fine-tuning: 1 month
+Deployment and Integration: 1 month
+Testing and Optimization: Ongoing
+
+7. Investment and ROI:
+
+Investment will be required for data collection, model development, hardware, and integration. The ROI will primarily come from reduced labor costs, increased efficiency, and the potential for expanded applications in other crops. A detailed financial analysis is needed to estimate the specific ROI.
+
+8. Conclusion:
+
+The implementation of a machine learning system for the automated detection of cherry leaf health offers a practical solution to Farmy & Foods' challenges. It not only improves the efficiency and accuracy of cherry inspection but also opens the door for similar initiatives in other crops. The successful adoption of this technology will position Farmy & Foods as a leader in innovative and sustainable agriculture practices.
 
 ## Dashboard Design
 * List all dashboard pages and its content, either block of information or widgets, like: buttons, checkbox, image, or any other item that your dashboard library supports.
@@ -55,7 +140,7 @@ To save time in this process, the IT team suggested an ML system that is capable
 
 
 ## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries you used in the project and provide example(s) on how you used these libraries.
+
 
 
 ## Credits 
