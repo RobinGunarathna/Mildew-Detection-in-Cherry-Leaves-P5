@@ -127,26 +127,14 @@ The implementation of a machine learning system for the automated detection of c
 * You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
 
 ## Deployment
-### Heroku
-
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. At the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly in case all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-
-
+Open the project in gitpod by pressing the green button here in Github and run streamlit.
 ## Main Data Analysis and Machine Learning Libraries
 
 
 
 ## Credits 
-
-* In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+https://www.youtube.com/watch?v=fVa-3Jr21v4
+https://www.kaggle.com/datasets/codeinstitute/cherry-leaves
 
 ### Content 
 
@@ -155,11 +143,7 @@ The implementation of a machine learning system for the automated detection of c
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media
-
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
-
-
+Everything is from the kaggle dataset
 
 ## Acknowledgements (optional)
 * In case you would like to thank the people that provided support through this project.
